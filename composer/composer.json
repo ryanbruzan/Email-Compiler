@@ -1,0 +1,6 @@
+{
+    "require": {
+        "crossjoin/pre-mailer": "^1.0",
+        "css-crush/css-crush": "dev-master"
+    }
+}

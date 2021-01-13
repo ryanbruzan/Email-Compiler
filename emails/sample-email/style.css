@@ -1,0 +1,193 @@
+/* CSSCrush Variables */
+@set {
+	brand: #E8415F;
+	black: #000;
+}
+@selector headings :any(h1, h2, h3, h4, h5, h6);
+@selector hyperlinks a:not(.button):any(, :link, :visited, :active, :hover, :focus);
+
+/* Reset CSS */
+*{box-sizing: border-box; -webkit-tap-highlight-color: rgba(0,0,0,0);}
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+img{-ms-interpolation-mode: bicubic;}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select,td{vertical-align:middle}
+
+/* Start */
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+	background: #F5F6F8;
+	color: $(black);
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.8;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+}
+
+:hyperlinks {
+	color: $(brand);
+	text-decoration: none;
+	font-weight: 700;
+}
+:hyperlinks.underline {
+	text-decoration: underline;
+}
+:hyperlinks.blend {
+	color: query(body);
+	font-weight: query(body);
+}
+
+p {
+	display: block;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 28px;
+}
+
+.brand-color {
+	color: $(brand);
+}
+
+:headings {
+	line-height: 48px;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: left;
+}
+h1 {
+	font-size: 24px;
+	line-height: 48px;
+	font-weight: 600;
+	color: $(black);
+}
+h2 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 600;
+	color: $(black);
+}
+h3 {
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 600;
+	color: $(red);
+}
+
+p:first-child,
+label:first-child,
+:headings:first-child {
+	margin-top: 0;
+	padding-top: 0;
+}
+p:last-child,
+label:last-child,
+:headings:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+table,
+table tr,
+table td {
+	width: 100%;
+	text-align: left;
+	color: $(black);
+	float: none !important;
+	margin: 0 auto;
+	table-layout: fixed;
+	vertical-align: top;
+}
+
+table.center,
+table.center>tr,
+table.center>tbody>tr,
+table.center>tr>td,
+table.wrapper>tbody>tr>td {
+	text-align: left;
+	width: 648px !important;
+	min-width: 648px !important;
+	max-width: 648px !important;
+}
+
+table.wrapper {
+	width: 600px !important;
+	min-width: 600px !important;
+	max-width: 600px !important;
+	text-align: left;
+	background-color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	margin: 0 auto;
+	border-radius: 6px;
+	box-shadow: 0 4px 16px 0 rgba(0,0,0,0.05);
+}
+table.wrapper>tr>td,
+table.wrapper>tbody>tr>td {
+	background-color: #ffffff;
+	padding: 32px;
+	margin: 0 auto;
+	border-radius: 6px;
+}
+
+table.center>tr>td,
+table.center>tbody>tr>td {
+	padding-bottom: 64px;
+}
+
+table.spacer-4>tr>td,
+table.spacer-4>tbody>tr>td {
+	padding: 2px 0;
+	font-size: 0;
+}
+table.spacer-8>tr>td,
+table.spacer-8>tbody>tr>td {
+	padding: 4px 0;
+	font-size: 0;
+}
+table.spacer-16>tr>td,
+table.spacer-16>tbody>tr>td {
+	padding: 8px 0;
+	font-size: 0;
+}
+table.spacer-24>tr>td,
+table.spacer-24>tbody>tr>td {
+	padding: 12px 0;
+	font-size: 0;
+}
+table.spacer-32>tr>td,
+table.spacer-32>tbody>tr>td {
+	padding: 16px 0;
+	font-size: 0;
+}
+table.spacer-48>tr>td,
+table.spacer-48>tbody>tr>td {
+	padding: 24px 0;
+	font-size: 0;
+}
+
+table.logo-container img {
+	width: auto;
+	height: 56px;
+}
+table.logo-container td {
+	vertical-align: middle;
+}
+table.logo-container td:last-child {
+	text-align: right;
+}
