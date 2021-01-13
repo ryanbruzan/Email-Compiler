@@ -74,6 +74,9 @@
 	// Echo our results to the browser.
 	echo $final_template;
 
+	// Modify some variables to work in final.html
+	$final_template = str_replace($_GET['uri'].'/', './', $final_template);
+
 	// Write our results to the final.html file.
 	$file = fopen($final_file, 'w') or die('Unable to open file!');
 	fwrite($file, $final_template);
