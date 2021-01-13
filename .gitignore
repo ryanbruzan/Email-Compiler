@@ -8,3 +8,5 @@ desktop.ini
 composer/vendor
 composer/composer.phar
 final.html
+/emails/*
+!/emails/sample-email
