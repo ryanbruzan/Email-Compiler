@@ -14,4 +14,4 @@ The project requires setting up Composer to complete installation:
 
  ## Creating/Editing Emails
 
- Simply make a copy of the `/emails/sample-email` directory and place it in `/emails`.  From there you may edit the `markup.php` and `style.css` documents to fit your needs.
+ Simply make a copy of the `/emails/sample-email` directory and place it in `/emails`.  From there you may edit the `markup.php` and `style.css` documents to fit your needs.  When you're done editing your email, open this repo in a web browser (or navigate to `/index.php`) and choose your email from the list.  It will be compiled into one file at `/emails/[your email]/final.html` and displayed in the browser for preview.
