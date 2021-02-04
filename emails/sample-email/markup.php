@@ -19,7 +19,6 @@
 										<img src="<?= $_GET['uri'] ?>/images/logo.png" alt="Logo">
 									</td>
 									<td align="right" valign="center">
-										<!-- <div><a href="https://www.cellenials.com/track">Track My Repair</a></div> -->
 										<div><a href="http://acmelogos.com/" class="blend">acmelogos.com</a></div>
 									</td>
 								</tr>
